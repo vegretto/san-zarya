@@ -1,0 +1,33 @@
+.modal.-testimonials#modal-testimonials
+    ._inner
+        .modal__close.js-close-modal
+            +icon('close-modal')
+        ._title Ваше мнение важно для нас
+        form#reviews_form.static_form
+            .field
+                input#ReviewsForm_name(placeholder='Ф.И.О.' name='ReviewsForm[name]' type='text')
+                #ReviewsForm_name_em_.errorMessage(style='display:none')
+            .field
+                input#ReviewsForm_email(placeholder='Ваш e-mail' name='ReviewsForm[email]' type='text')
+                #ReviewsForm_email_em_.errorMessage(style='display:none')
+            .field
+                input#ReviewsForm_room(placeholder='Номер' name='ReviewsForm[room]' type='text')
+                #ReviewsForm_room_em_.errorMessage(style='display:none')
+            .field
+                input#ReviewsForm_date_from.date_field(placeholder='Дата отдыха с' name='ReviewsForm[date_from]' type='text')
+                #ReviewsForm_date_from_em_.errorMessage(style='display:none')
+            .field
+                input#ReviewsForm_date_to.date_field(placeholder='Дата отдыха по' name='ReviewsForm[date_to]' type='text')
+                #ReviewsForm_date_to_em_.errorMessage(style='display:none')
+            .field
+                textarea#ReviewsForm_content(placeholder='Отзыв' name='ReviewsForm[content]')
+                #ReviewsForm_content_em_.errorMessage(style='display:none')
+            .field.button
+                label.agreement_checkbox
+                    input.js_agreement_checkbox(type='checkbox' value='1' name='agree' checked='')
+                    span.personal-date-sitebar Даю согласие на обработку моих #[a(target='_blank' href='/user_agreement/') персональных данных]
+                .btns-wrapper.-center.-mobile-center
+                    button.btn-rdsgn.-blue.-medium.js_submit_button(type='submit' value='Отправить') Отправить
+            div(style='display:none;')
+                #reviews_success.modalWin
+                    .formSentContent Спасибо! Ваш отзыв будет размещен после модерации.

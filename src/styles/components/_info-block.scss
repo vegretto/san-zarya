@@ -1,0 +1,45 @@
+.includes {
+  padding: 0 0 90px;
+}
+
+.info-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+  &__item {
+    flex-basis: 370px;
+    height: 162px;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px;
+    position: relative;
+  }
+  &__title {
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 1;
+    position: relative;
+    color: #055EA0;
+    padding: 8px 12px;
+    background-color: $white;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  &__item-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

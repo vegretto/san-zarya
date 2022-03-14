@@ -1,0 +1,38 @@
+.header-disclaimer {
+  background-color: #E1F6FF;
+  padding: 15px 0;
+  display: none;
+  position: sticky;
+  top: 115px;
+  z-index: 10;
+  &.visible {
+    display: block;
+  }
+  @media (max-width: 1199px) {
+    top: 282px;
+  }
+  @media (max-width: 767px) {
+    top: 64px;
+  }
+  &__inner {
+    max-width: 1040px;
+    padding: 0 40px 0 15px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+  .close-cross {
+    right: 5px;
+    top: -2px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dblue;
+    @media (max-width: 600px) {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
+}

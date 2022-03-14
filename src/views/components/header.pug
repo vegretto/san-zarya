@@ -1,0 +1,94 @@
+.header
+    .header-menu
+        .container
+            .row.logo_line
+                .col-lg-2.col-md-2.col-xs-2.logo
+                    a(href='/')
+                        img(src='img/logo.png' alt='Санаторий Заря')
+                    p.official Официальный сайт санатория
+                .col-lg-4.col-md-4.col-xs-4.hidden-xs.descr
+                    p.head_descriptor
+                        span Санаторий «Заря» в Кисловодске
+                        | Управление делами Президента Российской Федерации
+                    a.head-contact(href='/contacts/')
+                        p.address
+                            img.adress-img(alt='' src='img/location-pointer.png')
+                            | г. Кисловодск, ул Прудная, 107
+                .col-lg-4.col-md-4.col-xs-4.buttons
+                    .tour.hidden-xs
+                        a.btn(href='about/gallery/#foto' style='width: 155px;') Галерея
+                        a.tour3(href='/about/3d-tour/') Виртуальный тур по санаторию
+                    .feed
+                        a.btn.white.bron(href='zabronirovat_/') Забронировать
+                        a.header__mobile-phone(href='tel:+78793721107')
+                            +icon('phone')
+                        a.ask_question.hidden-xs(href='question/') Задать вопрос
+                    button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+                        span.cd-menu-icon
+                .col-lg-2.col-md-2.col-xs-2.phones
+                    a.header_phone(href='tel:+78793721107') +7 (87937) 2-11-07
+            .row.fix-menu
+                .container
+                    .logo-menu.col-sm-1
+                        a(href='/')
+                            img(src='img/logo.png' alt='Санаторий Заря')
+                        p.official Официальный сайт санатория
+                    .scroll-bar-menu.col-sm-11
+                        p.address
+                            img.adress-img(alt='' src='img/location-pointer.png')
+                            | г. Кисловодск, ул Прудная, 107
+                        a.btn(href='about/gallery/#foto' style='width: 155px;') Галерея
+                        a.ask_question(href='question/') Задать вопрос
+                        a.btn.white.bron(href='zabronirovat_/') Забронировать
+                        a.header_phone(href='tel:+78793721107') +7 (87937) 2-11-07
+                        // <a href="#" class="btn call_back">Заказать звонок</a>
+                    .col-xs-12
+                        ul.main_menu
+                            li.__dropdown-toggle.js-dropdown-toggle
+                                a(href='about/') О санатории
+                                .__dropdown.js-dropdown
+                                    .__dropdown-menu
+                                        a(href="#").__dropdown-menu-item Диагностическая база
+                                        a(href="#").__dropdown-menu-item.current Лечебная база
+                                        a(href="#").__dropdown-menu-item 2020. Новые методы лечения
+                                        a(href="#").__dropdown-menu-item Медицинские услуги
+                                        a(href="#").__dropdown-menu-item SPA - услуги и косметология
+                                        a(href="#").__dropdown-menu-item Врачи
+                                        a(href="#").__dropdown-menu-item Показания для санаторно-курортного лечения
+                                        a(href="#").__dropdown-menu-item Противопоказания
+                                .__mobile-dropdown-toggle.js-mobile-dropdown-toggle
+                                    +icon('m-toggle')
+                            li.__dropdown-toggle.js-dropdown-toggle
+                                a(href='treatment/') Лечение
+                                .__dropdown.js-dropdown
+                                    .__dropdown-menu
+                                        a(href="#").__dropdown-menu-item Диагностическая база
+                                        a(href="#").__dropdown-menu-item.current Лечебная база
+                                        a(href="#").__dropdown-menu-item 2020. Новые методы лечения
+                                        a(href="#").__dropdown-menu-item Медицинские услуги
+                                        a(href="#").__dropdown-menu-item SPA - услуги и косметология
+                                        a(href="#").__dropdown-menu-item Врачи
+                                        a(href="#").__dropdown-menu-item Показания для санаторно-курортного лечения
+                                        a(href="#").__dropdown-menu-item Противопоказания
+                                        a(href="#").__dropdown-menu-item SPA - услуги и косметология
+                                        a(href="#").__dropdown-menu-item Врачи
+                                        a(href="#").__dropdown-menu-item Показания для санаторно-курортного лечения
+                                        a(href="#").__dropdown-menu-item Противопоказания
+                                .__mobile-dropdown-toggle.js-mobile-dropdown-toggle
+                                    +icon('m-toggle')
+                            li
+                                a(href='room/') Размещение
+                            li
+                                a(href='food/') Питание
+                            li
+                                a(href='leisure_and_service/') Досуг
+                            li
+                                a(href='price/') Прайс-лист
+                            li
+                                a(href='reviews/') Отзывы
+                            li
+                                a(href='faq/') Вопрос-ответ
+                            li
+                                a(href='contacts/') Контакты
+                            li
+                                a(href='usloviya/') COVID-19

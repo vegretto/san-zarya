@@ -1,0 +1,31 @@
+.indications {
+  margin: 90px 0;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -5px;
+  }
+  &__item {
+    font-size: 15px;
+    color: #055ea0;
+    background-color: #c3edff;
+    flex-basis: 195px;
+    margin: 5px;
+    padding: 10px;
+    height: 110px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration-color: transparent;
+    transition: .2s ease-in-out;
+    &:hover {
+      background: #0A8DC4;
+      color: $white;
+      text-decoration-color: transparent;
+      transition: .2s ease-in-out;
+    }
+  }
+}

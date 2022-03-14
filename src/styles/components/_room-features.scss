@@ -1,0 +1,35 @@
+.room-features {
+  padding: 90px 0;
+  &__items {
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+    @media (max-width: 600px) {
+      margin: -15px 0;
+    }
+  }
+  &__item {
+    flex-basis: 210px;
+    max-width: 210px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    @media (max-width: 600px) {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 15px 0;
+    }
+    .icon {
+      width: 30px;
+      height: auto;
+      max-height: 30px;
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+  }
+  &__item-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+.inter-map-title {
+  background: linear-gradient(180deg, #B3DDF1 66.67%, rgba(179, 221, 241, 0) 100%);
+  padding: 95px 15px 122px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 767px) {
+    padding: 35px 15px 100px;
+    margin-bottom: -75px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+    color: #055EA0;
+    max-width: 690px;
+    margin: 0 auto;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+.inter-map-inner {
+  padding-bottom: 90px;
+  margin-bottom: 90px;
+}

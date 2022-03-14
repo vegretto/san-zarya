@@ -1,0 +1,99 @@
+.rooms-section {
+  margin: 90px 0;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px -15px 35px -15px;
+  @media (max-width: 600px) {
+    margin: -15px 0;
+  }
+  &__item {
+    flex-basis: 370px;
+    margin: 15px;
+    @media (max-width: 600px) {
+      margin: 15px 0;
+      flex-basis: 340px;
+    }
+  }
+  &__item-slider {
+    width: 370px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 600px) {
+      width: 340px;
+      height: 200px;
+    }
+  }
+  &__item-content {
+    padding: 20px;
+    background-color: #FAFAFA;
+  }
+  &__item-title {
+    font-family: Gilroy, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 14px;
+  }
+  &__item-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  &__item-icons {
+    display: flex;
+    margin-bottom: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 13px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__item-bottom {
+    display: flex;
+    align-items: center;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__item-price {
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #469AD9;
+    margin-right: 16px;
+    @media (max-width: 600px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &__item-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #0084E7;
+    padding: 12px 20px;
+    background-color: #C3ECFE;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    transition: .2s ease-in-out;
+    &:hover {
+      background-color: $white;
+      color: $black;
+      text-decoration-color: rgba(255, 255, 255, 0);
+      border-color: #0A8DC4;
+      transition: .2s ease-in-out;
+    }
+  }
+}

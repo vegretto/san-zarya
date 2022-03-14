@@ -1,0 +1,75 @@
+.footer
+    .footer_block
+        .container
+            .row
+                .col-xs-12.footer__inner
+                    a.up_arrow(href='#')
+                    .ftr.logo_block
+                        a.logo_img(href='/')
+                            img(src='img/ftr_logo.png')
+                        p.logo_text
+                            | Санаторий «Заря» в Кисловодске
+                        p
+                            | Управление делами Президента Российской Федерации
+                        .politics-link
+                            a(href='/user_agreement/') Пользовательское соглашение
+                            a(href='/privacy_policy/') Политика конфиденциальности
+                    .ftr.menu_block
+                        ul.footer_menu
+                            li
+                                a(href='/about/') О санатории
+                            li
+                                a(href='/treatment/') Лечение
+                            li
+                                a(href='/room/') Размещение
+                            li
+                                a(href='/food/') Питание
+                            li
+                                a(href='/leisure_and_service/') Досуг и сервис
+                            li
+                                a(href='/price/') Прайс-лист
+                            li
+                                a(href='/reviews/') Отзывы
+                            li
+                                a(href='/faq/') Вопрос-ответ
+                            li
+                                a(href='/contacts/') Контакты
+                    .ftr.subs_block
+                        p
+                            | Будьте в курсе специальных предложений и акций.
+                            br
+                            |  Подпишитесь на рассылку.
+                        form#subscribe-form(enctype='multipart/form-data' action='/' method='post')
+                            .field
+                                input#SubscribeForm_email(placeholder='Ваш E-mail' name='SubscribeForm[email]' type='text')
+                                #SubscribeForm_email_em_.errorMessage(style='display:none')
+                            .field
+                                label.agreement_checkbox
+                                    input.js_agreement_checkbox(type='checkbox' value='1' name='agree' checked='')
+                                    span.personal-date-sitebar
+                                        | Даю согласие на обработку моих #[a(target='_blank' href='/user_agreement/') персональных данных]
+                                input.btn.white.js_submit_button(type='submit' value='Подписаться')
+                            div(style='display:none;')
+                                #subs_success.modalWin
+                                    .formSentContent Спасибо Вы подписались на рассылку санатория «Заря»
+                            a(href='/about/protivodestvie_korruptsii/').footer_separate-link Противодействие коррупции
+                    .ftr.cont_block
+                        p г. Кисловодск, ул Прудная, 107
+                        a(href='tel:+78793721107') +7 (87937) 2-11-07
+                        .social
+                            p
+                                a.fb(target='_blank' href='https://www.facebook.com/sanzarya.ru/')  
+                                a.inst(target='_blank' href='https://www.instagram.com/sanzarya.ru/')  
+                                a.yt(target='_blank' href='https://www.youtube.com/channel/UC08FJchu1n62ljNRxV0iN0Q')  
+                                // a class="tw" href="/">&nbsp;</a> <a class="gg" href="/">&nbsp;</a> <a class="vk" href="/">&nbsp;</a
+    .footer_line
+        .container
+            .row
+                .col-xs-6
+                    p
+                        | Официальный сайт санатория. При копировании материалов с сайта гиперссылка обязательна!
+                    p © (Copyright), ФГБУ Санаторий "ЗАРЯ" УДП РФ, 2010-2022
+                .col-xs-6.text_rigth
+                    | Разработчик
+                    a(href='https://webelement.ru')
+                        img(src='img/we.png')

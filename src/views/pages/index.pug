@@ -1,0 +1,265 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    main.page-wrapper.page-wrapper--main
+        section.main-banner
+            .bg-wrapper
+                +picture('main-banner-bg', 'png', '100%', 'auto')
+            ._container.container
+                ._content
+                    h1._title.h1-common.text-white Санаторий «Заря»
+                    ._subtitle Отдых и оздоровление в&nbsp;самом красивом и зеленом уголке Кисловодского парка
+                    .btns-wrapper
+                        a(href="#").btn-rdsgn.btn-rdsgn--white Посмотреть номера
+                        a(href="#").btn-rdsgn.btn-rdsgn--blue Смотреть видео
+        include ../components/inter-map
+        section.advantages
+            ._container.container
+                ._items
+                    ._item
+                        ._item-icon
+                            +picture('advant1', 'png', 98, 98)
+                        ._item-text Собственный парк с беседками, фонтанами, японским прудом
+                    ._item
+                        ._item-icon
+                            +picture('advant2', 'png', 98, 98)
+                        ._item-text Бассейн площадью 375 кв.м. (25 метров)
+                    ._item
+                        ._item-icon
+                            +picture('advant3', 'png', 98, 98)
+                        ._item-text Бювет с природным нарзаном
+                    ._item
+                        ._item-icon
+                            +picture('advant4', 'png', 98, 98)
+                        ._item-text Современное лечебное и диагностическое оборудование
+                    ._item
+                        ._item-icon
+                            +picture('advant5', 'png', 98, 98)
+                        ._item-text Спортивные площадки, теннисные корты и гольф-поле
+                    ._item
+                        ._item-icon
+                            +picture('advant6', 'png', 98, 98)
+                        ._item-text Спа-центр и косметологические кабинеты
+                    ._item
+                        ._item-icon
+                            +picture('advant7', 'png', 98, 98)
+                        ._item-text Все процедуры в одном корпусе. Теплые переходы и современные лифты
+                    ._item
+                        ._item-icon
+                            +picture('advant8', 'png', 98, 98)
+                        ._item-text Сауна, боулинг, бильярд, тренажерный зал, концертный и кинозалы
+        section.main-slider
+                ._container.container
+                    ._box
+                        .arrow.arrow--prev
+                            +icon('arrow')
+                        .arrow.arrow--next
+                            +icon('arrow')
+                        ._inner.js-main-slider
+                            ._wrapper.swiper-wrapper
+                                ._slide.swiper-slide
+                                    +videoFancyboxYT('https://www.youtube.com/watch?v=vs0ACH-_dmQ', 'video_bg', 'png', 370, 226, '', true)
+                                ._slide.swiper-slide
+                                    +pictureFancybox('video_bg', 'png', 370, 226, '')
+                                ._slide.swiper-slide
+                                    +videoFancyboxYT('https://www.youtube.com/watch?v=vs0ACH-_dmQ', 'video_bg', 'png', 370, 226, '', true)
+                                ._slide.swiper-slide
+                                    +videoFancyboxYT('https://www.youtube.com/watch?v=vs0ACH-_dmQ', 'video_bg', 'png', 370, 226, '', true)
+
+                    .btns-wrapper.btns-wrapper--center
+                        a(href="#").btn-rdsgn.btn-rdsgn--medium.btn-rdsgn--blue Фото и видео санатория
+                        a(href="#").btn-rdsgn.btn-rdsgn--medium.btn-rdsgn--white.btn-rdsgn--border-blue Смотреть 3D-тур по санаторию
+        section.crosslinks
+            ._container.container
+                h2._title.h2-common.text-white 180 видов лечения и диагностики в санатории<br> 18 врачей высшей категории
+                ._items
+                    a(href="#")._item
+                        .bg-wrapper
+                            +picture('cross1', 'png', 570, 244)
+                        ._item-content
+                            ._item-text Высококвалифицированные врачи
+                    a(href="#")._item
+                        .bg-wrapper
+                            +picture('cross2', 'png', 570, 244)
+                        ._item-content
+                            ._item-text Диагностическая база
+                    a(href="#")._item
+                        .bg-wrapper
+                            +picture('cross3', 'png', 570, 244)
+                        ._item-content
+                            ._item-text Лечебная база
+                    a(href="#")._item
+                        .bg-wrapper
+                            +picture('cross4', 'png', 570, 244)
+                        ._item-content
+                            ._item-text Новые методы лечения 2020
+        section.indications
+            ._container.container
+                h2.h2-common Показания для санаторно-курортного лечения
+                ._items
+                    a(href="#")._item Ишемическая болезнь сердца
+                    a(href="#")._item Артериальная гипертония
+                    a(href="#")._item Сахарный диабет
+                    a(href="#")._item Заболевания органов дыхания
+                    a(href="#")._item Поражение периферической нервной системы
+                    a(href="#")._item Болезни женских тазовых органов
+                    a(href="#")._item Болезни мужских половых органов
+                    a(href="#")._item Заболевания костно-мышечной системы
+                    a(href="#")._item Заболевания органов пищеварения
+        section.rooms-section
+            ._container.container
+                h2._title.h2-common Просторные номера с балконами видом на парк или лес
+                .rooms
+                    ._item
+                        ._item-slider.js-item-img-slider
+                            .swiper-pagination
+                            ._item-slider-wrapper.swiper-wrapper
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                        ._item-content
+                            ._item-title Одноместный номер
+                            ._item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            ._item-icons
+                                +icon('rooms1')
+                                +icon('rooms2')
+                                +icon('rooms3')
+                            ._item-bottom
+                                ._item-price от 3500 руб./сутки
+                                a(href="#")._item-btn Смотреть номер
+                    ._item
+                        ._item-slider.js-item-img-slider
+                            .swiper-pagination
+                            ._item-slider-wrapper.swiper-wrapper
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                        ._item-content
+                            ._item-title Одноместный номер
+                            ._item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            ._item-icons
+                                +icon('rooms1')
+                                +icon('rooms2')
+                                +icon('rooms3')
+                            ._item-bottom
+                                ._item-price от 3500 руб./сутки
+                                a(href="#")._item-btn Смотреть номер
+                    ._item
+                        ._item-slider.js-item-img-slider
+                            .swiper-pagination
+                            ._item-slider-wrapper.swiper-wrapper
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                                ._item-slide.swiper-slide
+                                    +picture('rooms1', 'png', 370, 221)
+                        ._item-content
+                            ._item-title Одноместный номер
+                            ._item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            ._item-icons
+                                +icon('rooms1')
+                                +icon('rooms2')
+                                +icon('rooms3')
+                            ._item-bottom
+                                ._item-price от 3500 руб./сутки
+                                a(href="#")._item-btn Смотреть номер
+                .btns-wrapper.-center.-mobile-center
+                    a(href="#").btn-rdsgn.btn-rdsgn--medium.btn-rdsgn--blue Все номера
+        section.tile-section
+            ._container.container
+                h2._title.h2-common Отдых и развлечения
+                .tile-block
+                    a(href="#")._item.-lg
+                        ._img
+                            +picture('tile1', 'png', 570, 240)
+                        ._title Тренажерный зал
+                    a(href="#")._item
+                        ._img
+                            +picture('tile2', 'png', 270, 240)
+                        ._title Боулинг
+                    a(href="#")._item
+                        ._img
+                            +picture('tile3', 'png', 270, 240)
+                        ._title Сауна
+                    a(href="#")._item
+                        ._img
+                            +picture('tile4', 'png', 270, 240)
+                        ._title Библиотека
+                    a(href="#")._item.-lg
+                        ._img
+                            +picture('tile5', 'png', 570, 240)
+                        ._title Бассейн
+                    a(href="#")._item
+                        ._img
+                            +picture('tile6', 'png', 270, 240)
+                        ._title Кинозал
+                .btns-wrapper.-center.-mobile-center
+                    a(href="#").btn-rdsgn.btn-rdsgn--medium.btn-rdsgn--blue Подробнее о досуге в санатории
+        section.instagram-section
+            ._container.container
+                h2._title.h2-common Узнайте больше о санатории и курортах КМВ<br /> в нашем инстаграме #[a(href="#") @sanzarya.ru]
+                .instagram-box
+                    ._items
+                        a(href="#")._item.-lg
+                            ._img
+                                +picture('insta1', 'png', 470, 490)
+                            ._content
+                                ._insta-head
+                                    ._insta-avatar
+                                        +picture('insta-avatar', 'png', 38, 38)
+                                    ._insta-text
+                                        ._insta-account-name sanzarya.ru
+                                        ._insta-account-title Санаторий “Заря” Кисловодск
+                            +icon('insta-icon')
+                        a(href="#")._item.-sm.-flex-end
+                            ._img
+                                +picture('insta2', 'png', 370, 358)
+                            ._content
+                                ._insta-head
+                                    ._insta-avatar
+                                        +picture('insta-avatar', 'png', 38, 38)
+                                    ._insta-text
+                                        ._insta-account-name sanzarya.ru
+                                        ._insta-account-title Санаторий “Заря” Кисловодск
+                            +icon('insta-icon')
+                        a(href="#")._item.-sm.-ml-auto
+                            ._img
+                                +picture('insta3', 'png', 370, 358)
+                            ._content
+                                ._insta-head
+                                    ._insta-avatar
+                                        +picture('insta-avatar', 'png', 38, 38)
+                                    ._insta-text
+                                        ._insta-account-name sanzarya.ru
+                                        ._insta-account-title Санаторий “Заря” Кисловодск
+                            +icon('insta-icon')
+                        a(href="#")._item.-lg
+                            ._img
+                                +picture('insta4', 'png', 470, 490)
+                            ._content
+                                ._insta-head
+                                    ._insta-avatar
+                                        +picture('insta-avatar', 'png', 38, 38)
+                                    ._insta-text
+                                        ._insta-account-name sanzarya.ru
+                                        ._insta-account-title Санаторий “Заря” Кисловодск
+                            +icon('insta-icon')
+
+
+block append modals
+    include ../components/modal-map
+
+
+
+
+
+
+

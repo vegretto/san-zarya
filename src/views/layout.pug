@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title Cанаторий Заря
+        meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0")
+        link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+        link(rel="stylesheet" href="styles/style.min.css")
+    body
+        block header
+            include components/header
+            include components/header-disclaimer
+        block content
+        block footer
+            include components/footer
+        block modals
+        block scripts
+            script(src="scripts/vendor.min.js")
+            script(src="scripts/vendor/ug-theme-grid.js")
+            script(src="scripts/vendor/unitegallery.min.js")
+            script(src="scripts/main.min.js")
+
+

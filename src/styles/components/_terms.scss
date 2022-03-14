@@ -1,0 +1,29 @@
+.terms {
+  margin-bottom: 90px;
+  @media (max-width: 767px) {
+    margin-bottom: 45px;
+  }
+  p {
+    font-family: Lato-Regular, sans-serif;
+    font-size: 17px;
+    line-height: 135%;
+    color: #000000;
+    margin-bottom: 30px;
+    a {
+      color: #0A8DC4;
+    }
+    .icon {
+      display: inline-block;
+      fill: #0A8DC4;
+      margin: 0 5px;
+      position: relative;
+      top: 2px;
+    }
+  }
+  &__section {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

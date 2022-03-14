@@ -1,0 +1,72 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    main.page-wrapper.page-wrapper--food
+        .back_image(style="background-image:url(img/image_33.jpg)")
+        .container
+            ul.breadcrumbs
+                li
+                    a(href='/') Главная
+                li Размещение
+        section.food
+            ._container.container
+                h2.h2-common Питание
+                ._inner
+                    ._left
+                       p Питание в здравнице – это не просто массовое посещение столовой, да и названия такого здесь нет. В результате проведенной несколько лет назад реконструкции стало возможным в корне изменить организацию и структуру 3-х разового питания с использованием заказной системы – была создана служба лечебного питания, построенная по принципам диетических рационов, предусматривающих индивидуальные подходы: раздельную систему, вегетарианство и т.п. Поэтому питание в санатории приносит не только удовольствие, но и благодаря консультациям опытного врача диетолога, - ощутимые результаты в улучшении работы органов пищевариения.
+                       ._slider
+                           ._slider-inner.js-food-slider
+                               .arrow.arrow--small.arrow--prev
+                                   +icon('arrow')
+                               .arrow.arrow--small.arrow--next
+                                   +icon('arrow')
+                               ._slider-wrapper.swiper-wrapper
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food1-sm','png', 210, 135, 'food-gal1')
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food2-sm','png', 210, 135, 'food-gal1')
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food1-sm','png', 210, 135, 'food-gal1')
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food2-sm','png', 210, 135, 'food-gal1')
+                       p Питание в здравнице – это не просто массовое посещение столовой, да и названия такого здесь нет. В результате проведенной несколько лет назад реконструкции стало возможным в корне изменить организацию и структуру 3-х разового питания с использованием заказной системы – была создана служба лечебного питания, построенная по принципам диетических рационов, предусматривающих индивидуальные подходы: раздельную систему, вегетарианство и т.п. Поэтому питание в санатории приносит не только удовольствие, но и благодаря консультациям опытного врача диетолога, - ощутимые результаты в улучшении работы органов пищевариения.
+                       ._slider
+                           ._slider-inner.js-food-slider
+                               .arrow.arrow--small.arrow--prev
+                                   +icon('arrow')
+                               .arrow.arrow--small.arrow--next
+                                   +icon('arrow')
+                               ._slider-wrapper.swiper-wrapper
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food1-sm','png', 210, 135, 'food-gal1')
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food2-sm','png', 210, 135, 'food-gal1')
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food1-sm','png', 210, 135, 'food-gal1')
+                                   ._slide.swiper-slide
+                                       +pictureFancybox('food2-sm','png', 210, 135, 'food-gal1')
+                    ._right
+                        a(href="#")._menu-item
+                            ._menu-item-icon
+                                +icon('food-menu')
+                            ._menu-item-text Меню ресторана "Заря”
+                        a(href="#")._menu-item
+                            ._menu-item-icon
+                                +icon('food-menu')
+                            ._menu-item-text Меню ресторана "Империал"
+        section.services
+            ._container.container
+                ._items
+                    a(href="#")._item
+                        ._img
+                            +picture('services1', 'png', 370, 242)
+                        ._content Досуг
+                    a(href="#")._item
+                        ._img
+                            +picture('services2', 'png', 370, 242)
+                        ._content Бассейн
+                    a(href="#")._item
+                        ._img
+                            +picture('services3', 'png', 370, 242)
+                        ._content Спа

@@ -1,0 +1,77 @@
+.footer__inner {
+  @media (max-width: 1199px) {
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+}
+
+.ftr.logo_block {
+  @media (max-width: 1199px) {
+    width: auto;
+  }
+  @media (max-width: 991px) {
+    flex-basis: 47%;
+  }
+  @media (max-width: 767px) {
+    flex-basis: 100%
+  }
+}
+
+.ftr.menu_block {
+  @media (max-width: 991px) {
+    flex-basis: 47%;
+  }
+  @media (max-width: 767px) {
+    flex-basis: 100%
+  }
+}
+
+.ftr.subs_block {
+  @media (max-width: 991px) {
+    flex-basis: 47%;
+  }
+  @media (max-width: 767px) {
+    flex-basis: 100%
+  }
+}
+
+.ftr.cont_block {
+  @media (max-width: 1199px) {
+    width: 22%;
+  }
+  @media (max-width: 991px) {
+    flex-basis: 47%;
+  }
+  @media (max-width: 767px) {
+    flex-basis: 100%
+  }
+}
+
+.ftr.subs_block > form {
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer_separate-link {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  color: #C4E8F3;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.ftr.subs_block form .field {
+  margin: 0;
+}
+.footer_menu>li {
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

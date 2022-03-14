@@ -1,0 +1,90 @@
+.modal {
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__title {
+    font-family: Gilroy,sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #0D8CC5;
+    margin-bottom: 20px;
+  }
+  &--testimonials {
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    &.opened {
+      display: flex !important;
+      opacity: 1;
+    }
+    .modal {
+      &__inner {
+        background-color: $white;
+        max-width: 570px;
+        width: 100%;
+        padding: 60px 80px 50px;
+        position: relative;
+        border-radius: 20px;
+        max-height: 100%;
+        overflow-y: auto;
+        scrollbar-color: #0A8DC4 #cccccc;
+        scrollbar-width: thin;
+        z-index: 9999;
+        @media (max-width: 991px) {
+          padding: 50px 30px 30px;
+        }
+        @media (max-width: 600px) {
+          padding: 40px 15px 20px;
+        }
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: #cccccc;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #0A8DC4;
+        }
+        .js_agreement_checkbox[type="checkbox"] + span::before {
+          background: #EAEAEA;
+          border: 2px solid #469AD9;
+          border-radius: 6px;
+          width: 28px;
+          height: 28px;
+        }
+        .js_agreement_checkbox[type="checkbox"]:checked + span::before {
+          background: #EAEAEA;
+        }
+        .js_agreement_checkbox[type="checkbox"] + span::after {
+          content: "";
+          position: absolute;
+          width: 22px;
+          height: 17px;
+          top: 7px;
+          left: 3px;
+          background: url("../img/svg/check.svg");
+          opacity: 0;
+        }
+        .js_agreement_checkbox[type="checkbox"]:checked + span::after {
+          opacity: 1;
+          transition: .2s ease-in-out;
+        }
+        .agreement_checkbox span.personal-date-sitebar {
+          padding-left: 35px;
+        }
+        .agreement_checkbox {
+          margin-bottom: 20px!important;
+        }
+      }
+    }
+  }
+}

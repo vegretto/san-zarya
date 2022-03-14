@@ -1,0 +1,24 @@
+.page-wrapper--room {
+  padding-top: 60px;
+  .price-table {
+    display: table;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
+  .price-section__wrapper {
+    border: 1px solid #C3ECFE;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+.room-title {
+  margin-bottom: 30px;
+}
+
+.faq {
+  &__container {
+    max-width: 880px;
+    width: 100%;
+  };
+}

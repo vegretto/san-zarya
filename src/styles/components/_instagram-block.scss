@@ -1,0 +1,118 @@
+.instagram-section {
+  padding: 90px 0;
+  &__title {
+    @media (max-width: 991px) {
+      br {
+        display: none;
+      }
+    }
+    a {
+      color: #469AD9;
+    }
+  }
+}
+
+.instagram-box {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @media (max-width: 991px) {
+      margin: -10px;
+    }
+    @media (max-width: 767px) {
+      margin: -10px 0;
+      justify-content: center;
+    }
+  }
+  &__item {
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px;
+    transition: none;
+    &:hover {
+      text-decoration: none;
+    }
+    @media (max-width: 991px) {
+      margin: 10px;
+    }
+    .icon {
+      width: 30px;
+      height: 37px;
+      position: absolute;
+      right: 20px;
+      bottom: 13px;
+      z-index: 2;
+    }
+    &--lg {
+      flex-basis: 470px;
+      height: 490px;
+      @media (max-width: 991px) {
+        flex-basis: 340px;
+        height: 338px;
+      }
+    }
+    &--sm {
+      flex-basis: 370px;
+      height: 358px;
+      @media (max-width: 991px) {
+        flex-basis: 340px;
+        height: 338px;
+      }
+    }
+    &--flex-end {
+      align-self: flex-end;
+    }
+    &--ml-auto {
+      margin-left: auto;
+      @media (max-width: 991px) {
+        margin-left: 10px;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      @media (max-width: 767px) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+  &__insta-head {
+    display: flex;
+    align-items: center;
+  }
+  &__insta-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 7px;
+  }
+  &__insta-account-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: $white;
+  }
+  &__insta-account-title {
+    font-size: 12px;
+    line-height: 16px;
+    color: $white;
+  }
+}
