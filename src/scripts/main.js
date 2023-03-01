@@ -185,6 +185,8 @@ $(document).ready(function () {
         api.nextItem();
     });
 
+
+
     let initialBtnText;
     let initialStartHeight;
     $(document).on('click', '.js-read-more-toggle', function () {
